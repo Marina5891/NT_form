@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <p class="info">Стоимость билета "из А в В" или "из В в А" 700 рублей</p>
+    <p class="info">Стоимость билета из "А в В и обратно в А" 1200 рублей</p>
+
+    <p>Время в пути в одну сторону 50 минут</p>
+
+    <form action="" id="form">
+        <label for="route">Выберите направление</label>
+        <select name="route" id="route">
+            <option value="из A в B">из A в B</option>
+            <option value="из B в A">из B в A</option>
+            <option value="из A в B и обратно в А">из A в B и обратно в А</option>
+        </select>
+        <br>
+        
+        <label for="time">Выберите время</label>
+        <select name="time" id="time">
+        </select>
+        <br>
+
+        <label for="time-reverse" class="time-reverse">Выберите время возвращения</label>
+        <select name="time-reverse" class="time-reverse">
+        </select>
+        <br>
+        <br>
+        <label for="num">Количество билетов</label>
+        <input id="num" required>
+        <br>
+
+        <button type="submit">Посчитать</button>
+    </form>
+
+    <p id="text"></p>
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>
